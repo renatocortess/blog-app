@@ -11,6 +11,8 @@ export default defineConfig({
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
+  
+  basePath:"/admin",
 
   schema: {
     types: schemaTypes,

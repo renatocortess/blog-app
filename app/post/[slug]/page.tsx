@@ -14,7 +14,7 @@ async function getData(slug: string) {
     return data;
   }
 
-  export default async function slugPage({
+  export default async function SlugPage({
     params,
 }: {
     params:{slug:string};
@@ -36,13 +36,13 @@ async function getData(slug: string) {
       };
 
     return (
-        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700 ">
+        <div className=" mt-8 xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700 ">
             <header className="pt-b xl:pb-6" >
                 <div className="space-y-1 text-center">
                     <div className="space-y-10">
                         <div>
-                            <p className="text-base font-medium leading-6 text-teal-500">
-                            {new Date(data._createdAt).toISOString().split("T")[0]}
+                            <p className="text-base font-medium leading-6 text-green-6s00">
+                           Publicação: {new Date(data._createdAt).toISOString().split("T")[0]}
                             </p>
 
                         </div>
@@ -62,8 +62,8 @@ async function getData(slug: string) {
 
             </header>
 
-            <div className="divide-y divide-gray-200 pb-7 dark:divide-gray-700 xl:divide-y-0"> 
-            <div className="divide-y divide-gray-200 pb-7 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
+            <div className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:divide-y-0"> 
+            <div className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
                 <div className="prose max-w-none pb-8 pt-10 dark:prose-invert prose-lg">
                 <PortableText
               value={data.content}

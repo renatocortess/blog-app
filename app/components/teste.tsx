@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <div className="mt-7 max-w-4xl mx-auto px-9  sm:px-9 lg:px-9">
           
-      
+          
             <div className="flex justify-between h-18"> 
             
                 <div className="flex justify-between items-center w-full">
@@ -22,7 +22,6 @@ export default function Navbar() {
             />
       </div>
         </Link>
-        <Header/>
       
                     <ThemeButton/>
                    
